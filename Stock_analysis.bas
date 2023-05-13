@@ -1,5 +1,5 @@
 Attribute VB_Name = "Module1"
-Sub stock_data()
+Sub stock_anallysis()
 'to run thecodein all worksheets of this workbook
 
 Dim num_of_sheets As Integer
@@ -27,7 +27,7 @@ For Each ws In Worksheets
 
 
     Dim row As Integer
-    Dim i As Integer
+    Dim i As Long
     Dim lastrow As Long
     Dim yearlychange As Double
     Dim percentchange As Double
@@ -139,5 +139,5 @@ For Each ws In Worksheets
     ws.Cells(4, 19).Value = volumemax
     
 Next ws
-
 End Sub
+
